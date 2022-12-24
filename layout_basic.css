@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header, nav, section, article, aside,footer{
+    background-color: beige;
+    display: block;
+    margin: 3px;
+}
+
+header{
+    background-color: coral;
+    height: 100px;
+    /* width : 100% 블록레벨 태그는 자동으로 옆을 채우는 성격이 있어서
+    width 100% 설정하지 않아도 적용! */
+}
+
+nav{
+    background-color: yellowgreen;
+    height: 100px;
+    width: 80%;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#topMenu{
+    display: flex;
+    list-style: none;
+    background-color: aquamarine;
+}
+
+#topMenu li{
+    position: relative;
+    background-color: cornflowerblue;
+    margin: 0px auto;
+    width: 70px;
+}
+
+
+#topMenu > li >ul {
+    position: absolute;
+    display: none;
+    list-style: none;
+}
+
+#topMenu > li:hover > ul {
+    display: block;
+}
+
+section{
+    width: 80%;
+    float: left
+}
+
+article{
+    width: 50%;
+    background-color: rgb(115, 115, 58);
+}
+
+aside{
+    width: 20%;
+    height: 700px;
+}
+
+div{
+    display: flex;
+    height: 700px;
+}
+
+footer{
+    height: 100px;
+}
+
+/* 1*/
